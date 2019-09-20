@@ -1,0 +1,238 @@
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.robots {
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: #C0392B;
+}
+
+.head { 
+	width: 200px; 
+	margin: 50px auto; 
+	height: 80px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 6px;
+} 
+
+.eyes {
+}
+
+/*.head:hover {
+	width: 300px;
+    transition: 1s ease-in-out;
+}*/
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex; 
+	margin: 0 auto; 
+} 
+
+.left_arm, .right_arm { 
+	width: 10px; 
+	height: 80px;
+	border-radius: 100px; 
+} 
+
+.left_arm {
+	position:absolute;
+	margin-left: 50px;
+	margin-top: 40px;
+	background-color: purple;
+	z-index: -2;
+} 
+
+.left_hand{
+	position: absolute;
+	width: 40px; 
+	height: 40px; 
+	border-radius: 20px; 
+	background-color:grey;
+	margin-top:110px;
+	margin-left: 35px;
+}
+
+.right_arm { 
+	position:absolute;
+	margin-top: 40px;
+	margin-left: 200px;
+	background-color:purple;
+}
+
+.right_hand{
+	position: absolute;
+	width: 40px; 
+	height: 40px; 
+	border-radius: 20px; 
+	background-color:grey;
+	margin-top:110px;
+	margin-left: 185px;
+	z-index: 1;
+}
+
+.right_arm:hover{
+    transform: rotate(-60deg);
+    transform-origin: 100% -30%;
+}
+
+.right_arm:hover~ .right_hand{
+    transform: rotate(-150deg);
+    transform-origin: 160% -50%;
+}
+
+.torso {
+	margin: 0 auto;
+	padding-left: 50px;
+	margin-right: 50px;
+	width: 160px; 
+	height: 100px;
+	z-index: -1;
+	border-radius: 0 0 10px 10px; 
+} 
+
+.lower_body { 
+	position: relative;
+	margin: 0 auto;
+	padding-top:60px;
+	width: 200px; 
+	height: 200px;
+	z-index: -2;
+
+} 
+
+.left_leg, .right_leg { 
+	width: 10px; 
+	height: 120px;
+	bottom: 270px;
+	border-radius: 0 0 100px 100px;
+	background-color:purple;
+}
+
+.left_foot, .right_foot{
+	width: 40px; 
+	height: 40px; 
+	border-radius: 20px; 
+	background-color:#4A0931;
+}
+
+.left_leg { 
+	position: absolute;
+	left: 60px;
+}
+
+.left_foot{
+	position: absolute;
+	bottom: 240px;
+	left: 44px;
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_leg {
+	position:absolute;
+	left: 100px;
+	z-index:-1;
+}
+
+.right_foot{
+	position: absolute;
+	bottom: 240px;
+	left: 87px;
+}
+
+.right_leg:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.unibrow{
+	position: relative;
+	top: 0px; 
+	left: 35px;
+	width: 110px; 
+	height: 25px; 
+	background-color:#922B21;
+	z-index: 1;
+} 
+
+.unibrow:hover{
+	transform: translate(0px, -20px);
+}
+
+.unibrow:hover ~ .right_pupil, .unibrow:hover ~ .left_pupil{
+	transform: scale(0.5, 0.5);
+
+}
+
+.left_eye, .right_eye { 
+	width: 40px; 
+	height: 40px; 
+	border-radius: 20px; 
+	background-color:white;  
+}
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative;
+	bottom: 15px;
+	left: 45px;
+	
+} 
+
+.right_eye { 
+	position: relative; 
+	bottom: 75px;
+	left: 82px;
+}
+
+
+.left_pupil{
+	position:relative;
+	background-color:black;
+	width:20px;
+	height:20px;
+	left:50px;
+	bottom: 45px;
+	border-radius: 20px;
+
+}
+
+.right_pupil{
+	position:relative;
+	width:20px;
+	height:20px;
+	left:90px;
+	bottom: 105px;
+	background-color:black;
+	border-radius: 20px; 
+}
+
+/*.left_pupil:hover, .right_pupil:hover{
+	transform: scale(1.1);
+}
+
+
+
+
+
+
